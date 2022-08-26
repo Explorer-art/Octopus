@@ -1,6 +1,5 @@
 # Octopus
 Octopus is a program for generating passwords according to the specified parameters.
-
 The program has been adapted so far only for the Windows operating system.
 
 Use: python Octopus.py [min] [max] [mode] [save]
