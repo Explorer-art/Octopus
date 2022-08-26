@@ -4,6 +4,8 @@ The program has been adapted so far only for the Windows operating system.
 
 Use: python Octopus.py [min] [max] [mode] [save]
 
+Example: python Octopus.py 1 3 N -s s
+
 Help: python Octopus.py --help
 
 min - The minimal lenght of the generated passwords.
