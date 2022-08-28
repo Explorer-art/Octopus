@@ -21,14 +21,14 @@ args = parser.parse_args()
 minimal_lenght = args.min
 maximal_lenght = args.max
 mode = args.mode
-type_generating = args.type
+type_1 = args.type
 instruction_generating = args.instruction
 save_in_file = args.file
 hash_bruteforce = args.bhash
 
 if mode == "G":
-	if type_generating == "N":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "N":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -71,8 +71,8 @@ if mode == "G":
 			print("")
 			print("Number of combinations: " + str(a))
 
-	if type_generating == "NL":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "NL":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -112,8 +112,8 @@ if mode == "G":
 				print("Done!")
 			print("Number of combinations: " + str(a))
 
-	if type_generating == "NLS":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "NLS":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -153,8 +153,8 @@ if mode == "G":
 			print("1")
 			print("Number of combinations: " + str(a))
 
-	if type_generating == "I":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "I":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if instruction_generating is None:
 			print("Error! Instructions are not given.")
@@ -199,26 +199,73 @@ if mode == "G":
 			print("Number of combinations: " + str(a))
 elif mode == "B":
 	try:
-		print("Bruteforce..")
+		if type_1 == "MD5":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.md5(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
+		if type_1 == "SHA1":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.sha1(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
+		if type_1 == "SHA224":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.sha224(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
+		if type_1 == "SHA256":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.sha256(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
+		if type_1 == "SHA384":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.sha384(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
+		if type_1 == "SHA512":
+			print("Bruteforce..")
+			with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
+				for password in file_5:
+					bruteforce = hashlib.sha512(password.encode().strip()).hexdigest()
+
+					if bruteforce == hash_bruteforce:
+						print("Done!")
+						print("Password: " + password)
+						file_5.close()
 	except:
 		print("Error! File not found.")
 		sys.exit()
 
-	a = 0
-	with open(save_in_file, "r", encoding="utf-8", errors="ignore") as file_5:
-		for password in file_5:
-			bruteforce = hashlib.md5(password.encode().strip()).hexdigest()
-			a += 1
-			print("Number: " + str(a))
-
-			if bruteforce == hash_bruteforce:
-				print("Done!")
-				print("Password: " + password)
-				file_5.close()
-
 elif mode is None:
-	if type_generating == "N":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "N":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -261,8 +308,8 @@ elif mode is None:
 			print("")
 			print("Number of combinations: " + str(a))
 
-	if type_generating == "NL":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "NL":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -302,8 +349,8 @@ elif mode is None:
 				print("Done!")
 			print("Number of combinations: " + str(a))
 
-	if type_generating == "NLS":
-		print("Octopus v 1.1 by Truzme_\n")
+	if type_1 == "NLS":
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
@@ -342,8 +389,8 @@ elif mode is None:
 			prin("")
 			print("Done!")
 			print("Number of combinations: " + str(a))
-	elif type_generating is None:
-		print("Octopus v 1.1 by Truzme_\n")
+	elif type_1 is None:
+		print("Octopus v 1.2 by Truzme_\n")
 
 		if save_in_file is not None:
 			check_1 = os.path.isdir("Passwords")
