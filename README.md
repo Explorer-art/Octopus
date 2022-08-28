@@ -13,9 +13,15 @@ min - The minimal lenght of the generated passwords.
 
 max - The maximal lenght of the generated passwords.
 
-mode - Password generation mode.
+mode - The mode of operation of the program.
 
-save - Save the generated passwords to a file.
+type - Type of password generation.
+
+instruction - Instructions for generating passwords.
+
+file - The file where to save the generated passwords or the file where to get passwords for brute force MD5 hashes.
+
+bhash - MD5 hash.
 
 Modes:
 
