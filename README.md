@@ -1,5 +1,5 @@
 # Octopus
-Octopus is a program for generating passwords according to the specified parameters and for bruteforce of MD5 hashes. The program has been adopted so far only for the Windows operating system.
+Octopus is a program for generating passwords according to the specified parameters and for bruteforce of hashes. The program has been adopted so far only for the Windows operating system.
 
 Author: Truzme_
 
