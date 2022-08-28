@@ -5,7 +5,7 @@ ATTENTION! DO NOT USE THIS PROGRAM FOR ILLEGAL PURPORES! IT's illegal!
 
 Use: python Octopus.py [mode] [type] [instruction] [file] [bhash] [min] [max]
 
-Example: python Octopus.py 1 3 N -s s
+Example: python Octopus.py -m G -t N -f Passwords.txt 1 3
 
 Help: python Octopus.py --help
 
