@@ -1,8 +1,7 @@
 # Octopus
-Octopus is a program for generating passwords according to the specified parameters.
-The program has been adapted so far only for the Windows operating system.
+Octopus is a program for generating passwords according to the specified parameters and for bruteforce of MD5 hashes. The program has been adopted so far only for the Windows operating system.
 
-Use: python Octopus.py [min] [max] [mode] [save]
+Use: python Octopus.py [mode] [type] [instruction] [file] [bhash] [min] [max]
 
 Example: python Octopus.py 1 3 N -s s
 
@@ -17,6 +16,12 @@ mode - Password generation mode.
 save - Save the generated passwords to a file.
 
 Modes:
+
+G - Generating a passwords.
+
+B - Bruteforce MD5 hashes.
+
+Types for the mode "G":
 
 N - Generation a passswords from numbers only.
 
