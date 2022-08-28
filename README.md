@@ -42,3 +42,17 @@ NL - Generation passwords from letters and numbers only.
 NLS - Generation passwords from letters, numbers and signs.
 
 I - Generate passwords according to your instructions.
+
+Types for the mode "B":
+
+MD5 - Hash MD5.
+
+SHA1 - Hash SHA1.
+
+SHA224 - Hash SHA224.
+
+SHA256 - Hash SHA256.
+
+SHA384 - Hash SHA384.
+
+SHA512 - Hash SHA512.
