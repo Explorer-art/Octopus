@@ -152,7 +152,6 @@ if mode == "G":
 			prin("")
 			print("1")
 			print("Number of combinations: " + str(a))
-
 	if type_1 == "I":
 		print("Octopus v 1.2 by Truzme_\n")
 
